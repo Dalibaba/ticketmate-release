@@ -95,6 +95,27 @@ main {
     margin-top: 0.5rem;
 }
 
+.first-launch {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.85rem 1.1rem;
+    margin: 1.5rem auto 0;
+    max-width: 36rem;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: left;
+}
+
+.first-launch strong {
+    color: var(--fg);
+    font-weight: 600;
+}
+
+.first-launch a {
+    color: var(--accent);
+}
+
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));

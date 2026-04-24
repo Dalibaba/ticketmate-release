@@ -14,7 +14,30 @@ Ticket Mate is a macOS app that helps you turn unstructured notes — meeting sc
 
 1. Download the latest `.zip` from the [releases page](https://github.com/Dalibaba/ticketmate-release/releases/latest).
 2. Unzip it and drag **Ticket Mate.app** into your `Applications` folder.
-3. Launch it. If macOS warns about an unidentified developer the first time, right-click the app → **Open** → **Open**.
+3. Follow the **First launch** steps below.
+
+## First launch on macOS
+
+> macOS will show a warning the first time you open Ticket Mate:
+> *"Ticket Mate cannot be opened because the developer cannot be verified"*
+> or
+> *"Ticket Mate is damaged and can't be opened."*
+
+This is macOS Gatekeeper being cautious — Ticket Mate is not yet notarized by Apple. The app itself is safe. To open it:
+
+1. In Finder, open your **Applications** folder.
+2. **Right-click** (or Control-click) **Ticket Mate.app** → **Open**.
+3. In the dialog, click **Open** again.
+
+You only need to do this once. Subsequent launches work normally.
+
+If the warning persists or you see *"is damaged"*, run this once in Terminal:
+
+```sh
+xattr -dr com.apple.quarantine "/Applications/Ticket Mate.app"
+```
+
+Then launch the app normally.
 
 ## Updates
 
