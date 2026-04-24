@@ -7,5 +7,87 @@
         <link>https://dalibaba.github.io/ticketmate-release/appcast.xml</link>
         <description>Ticket Mate update feed</description>
         <language>en</language>
+        <item>
+            <title>Version 1.0.0</title>
+            <pubDate>Fri, 24 Apr 2026 13:25:29 +0000</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<h3>What's new in 1.0.0</h3>
+<ul>
+<li>Initial commit</li>
+<li>Flatten project structure and fix Xcode root paths</li>
+<li>update docs</li>
+<li>Implement ticket generation POC with clean architecture layers</li>
+<li>Fix local Ollama connectivity in macOS app sandbox</li>
+<li>Refactor app structure and wire generation to persisted templates</li>
+<li>Add template dropdown to generate ticket view</li>
+<li>Add copy-to-clipboard action for generated ticket output</li>
+<li>Add AI settings module, app composition cleanup, and native macOS UI fixes</li>
+<li>Polish UI: remove generate header and templates reload action</li>
+<li>Harden Jira wiki generation flow and add unit test target</li>
+<li>Integrate ticket preview flow and refine template generation UI</li>
+<li>Update preview parsing and app composition wiring</li>
+<li>Fix Jira wiki preview parsing and remove hardcoded section heuristics</li>
+<li>Add separate Models screen with local and client model cards</li>
+<li>Persist AI model selection and integrate Kiro local client routing</li>
+<li>Add model-selection infrastructure and AI settings wiring</li>
+<li>Improve AI model UX, provider availability checks, and ticket generation input behavior</li>
+<li>Add per-template output format selection and persistence</li>
+<li>Fix Codex delimited response extraction from echoed output</li>
+<li>Integrate Claude client model with adapter-based AI settings wiring</li>
+<li>Update project docs for current AI/model architecture and workflows</li>
+<li>Apply pending ticket generation and template workflow updates</li>
+<li>Apply bug fix update</li>
+<li>Add targeted template and formatter test coverage</li>
+<li>Add Jira settings feature with secure token UX</li>
+<li>Implement Jira issue creation and project/work-domain configuration</li>
+<li>Add Jira-backed template issue type dropdown and smarter issue type resolution</li>
+<li>Commit non-priority updates across Jira settings and ticket generation</li>
+<li>Add Jira priority support across issue creation flow</li>
+<li>Add Jira attachment upload from create issue sheet</li>
+<li>Implement Gemini cloud provider support and include pending Jira updates</li>
+<li>Unify Jira connect flow and share session metadata across settings and issue creation</li>
+<li>Fix argument order and missing returns in JiraIssueCreationUseCaseTests</li>
+<li>Add My Tickets sidebar tab with JQL search and parent task display</li>
+<li>Add copy ticket key button to My Tickets cards</li>
+<li>Add Mentioned tab to My Tickets with segmented picker</li>
+<li>Add ticket detail pane, mention snippets, and highlighted mentions</li>
+<li>Refactor My Tickets: extract use cases, shared HTTP client, and test improvements</li>
+<li>Add LLM-powered ticket summarization to My Tickets</li>
+<li>Replace status transition popover with modal sheet dialog</li>
+<li>Add attachment downloads and clickable bare URLs in ticket detail</li>
+<li>Move settings into native macOS Settings window</li>
+<li>Migrate AppShellViewModel and TemplateListViewModel to @Observable</li>
+<li>Add legal documents module with first-run consent gate</li>
+<li>Add eye toggle to reveal Jira token in settings</li>
+<li>Merge branch 'fix/jira-token-visibility-toggle'</li>
+<li>Add Quick Capture panel with global hotkey (closes #5)</li>
+<li>Polish Draft-a-Ticket panel: header, editable draft, shared button</li>
+<li>Merge branch 'feature/issue-5-quick-capture' (closes #5)</li>
+<li>Integrate Polar licensing with blocking activation gate (closes #6)</li>
+<li>Merge pull request #13 from Dalibaba/feature/issue-6-polar-licensing</li>
+<li>Integrate Sparkle for in-app auto-updates (#9)</li>
+<li>Add .gitignore and RELEASING.md</li>
+<li>Rewrite RELEASING.md to cover both unsigned and signed paths</li>
+<li>Add CI + manual-trigger release pipeline</li>
+<li>Fix CI build failures: lower deployment target, rename notes README</li>
+<li>Scrub 35 self-referential xcodeproj entries that broke Xcode 16.4</li>
+<li>Work around Xcode 16.4 SPM resolver instability on CI</li>
+<li>Move DerivedData out of the repo; watch if this unsticks SPM</li>
+<li>Merge pull request #14 from Dalibaba/feature/issue-9-sparkle-autoupdate</li>
+<li>Exclude tests, docs, workflows, scripts from app target bundle</li>
+<li>Pin Sparkle tools version instead of parsing GitHub API</li>
+<li>Clone release repo outside source tree</li>
+<li>Defer release-repo clone until after the build</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/Dalibaba/ticketmate-release/releases/download/v1.0.0/TicketMate-1.0.0.zip"
+                sparkle:edSignature="Cgj6kC4EDkKHf5V4AWSMfpiM2cftoYstB68eu6c8VeSrShMbhLU8Cg9ruxkZzk6f2sRyS+PcbqQ+D6Abx52xBg=="
+                length="3182110"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
