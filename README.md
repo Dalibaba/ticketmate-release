@@ -31,4 +31,4 @@ All versions and their release notes are listed on the [releases page](https://g
 
 ## Support
 
-Questions or problems? Email **david@giveajoy.de**.
+Questions or problems? Email **braunlinkegbr@googlemail.com**.
