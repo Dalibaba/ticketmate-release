@@ -18,26 +18,32 @@ Ticket Mate is a macOS app that helps you turn unstructured notes — meeting sc
 
 ## First launch on macOS
 
-> macOS will show a warning the first time you open Ticket Mate:
-> *"Ticket Mate cannot be opened because the developer cannot be verified"*
-> or
-> *"Ticket Mate is damaged and can't be opened."*
+> macOS will block Ticket Mate the first time you open it, with a dialog like:
+> *"Apple could not verify 'Ticket Mate' is free of malware that may harm your Mac…"*
 
-This is macOS Gatekeeper being cautious — Ticket Mate is not yet notarized by Apple. The app itself is safe. To open it:
+This is macOS Gatekeeper being cautious — Ticket Mate is not yet notarized by Apple. The app itself is safe. Open it once and macOS remembers.
 
-1. In Finder, open your **Applications** folder.
-2. **Right-click** (or Control-click) **Ticket Mate.app** → **Open**.
-3. In the dialog, click **Open** again.
-
-You only need to do this once. Subsequent launches work normally.
-
-If the warning persists or you see *"is damaged"*, run this once in Terminal:
+### Option A — Terminal (fastest)
 
 ```sh
 xattr -dr com.apple.quarantine "/Applications/Ticket Mate.app"
 ```
 
-Then launch the app normally.
+Then double-click Ticket Mate to launch it normally. Done.
+
+### Option B — System Settings (no Terminal)
+
+1. Double-click **Ticket Mate.app** → you'll see the block dialog → click **Done**.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll down to the **Security** section. You'll see a line that reads something like
+   *"Ticket Mate was blocked from use because it is not from an identified developer."*
+4. Click **Open Anyway** on that line.
+5. Authenticate with your password or Touch ID.
+6. Double-click **Ticket Mate.app** again. A new dialog appears — this one has an **Open** button. Click it.
+
+You only need to do this once. Subsequent launches work normally, and Sparkle-delivered updates apply without re-doing the dance.
+
+> Why the ceremony? Apple requires apps distributed outside the Mac App Store to be signed with a paid Developer ID certificate and notarized. Ticket Mate isn't yet — that switch is planned once the app has a paying userbase that justifies the $99/year membership.
 
 ## Updates
 
