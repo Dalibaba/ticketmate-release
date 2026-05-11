@@ -8,6 +8,29 @@
         <description>Ticket Mate update feed</description>
         <language>en</language>
         <item>
+            <title>Version 1.0.1</title>
+            <pubDate>Mon, 11 May 2026 19:43:33 +0000</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<h3>Ticket Mate 1.0.1</h3>
+<p>First fully signed + notarized release. No more first-launch Gatekeeper dance — the app is now recognized by Apple and opens like any other downloaded Mac app.</p>
+<p>### Changes</p>
+<ul>
+<li>**Apple Developer ID signing + notarization**: Ticket Mate is now signed with a Developer ID Application certificate and notarized by Apple's notary service. Works on every Mac, including managed / work-profile devices.</li>
+<li>Under the hood, releases now go through the CI pipeline: build → sign → notarize → staple → Sparkle-sign → publish.</li>
+</ul>
+<p>### Upgrading from 1.0.0</p>
+<p>If you installed v1.0.0, Sparkle will offer this update automatically on the next check (or use **Ticket Mate → Check for Updates…**). After the update, your installation becomes the properly-signed version and subsequent launches are friction-free.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/Dalibaba/ticketmate-release/releases/download/v1.0.1/TicketMate-1.0.1.zip"
+                sparkle:edSignature="U1jTP0TeCYPG9txXfrqbve34XQKRc48omwNCgPr1Vnr+zD66gCkMzUYkknkCPKMtdp/162qCO2Dt6BhS1UmDAw=="
+                length="3479167"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.0.0</title>
             <pubDate>Fri, 24 Apr 2026 13:25:29 +0000</pubDate>
             <sparkle:version>6</sparkle:version>
