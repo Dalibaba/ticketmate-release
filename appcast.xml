@@ -8,6 +8,28 @@
         <description>Ticket Mate update feed</description>
         <language>en</language>
         <item>
+            <title>Version 1.0.2</title>
+            <pubDate>Sun, 14 Jun 2026 07:23:43 +0000</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>1.0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+<h3>What's new in 1.0.2</h3>
+<ul>
+<li>Pin CI to macOS 26 / Xcode 26.3 and sign Sparkle helpers inside-out</li>
+<li>Eliminate keychain consent prompts via data protection keychain</li>
+<li>Restore inside-out release signing accidentally reverted in 2acea7b</li>
+<li>Make quick capture panel resizable and grow it when a result appears</li>
+<li>Drop legacy keychain migration in favor of one-time re-entry</li>
+</ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/Dalibaba/ticketmate-release/releases/download/v1.0.2/TicketMate-1.0.2.zip"
+                sparkle:edSignature="OnsP1QA6DdVjG74LLfbqLDCVfkjhVJdKTG3XMi2yY/yvK4ZjtTBxoeAAFxFfSZZlUWJH5dIfpOZIQW5fGut7Cg=="
+                length="3457267"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.0.1</title>
             <pubDate>Mon, 11 May 2026 19:43:33 +0000</pubDate>
             <sparkle:version>9</sparkle:version>
